@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vaccine Alerts Maharajganj</title>
+    <link rel="icon" href="assets/icons/favicon.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Covid-19 Vaccine Slot availability tracker and notifier for Maharajganj.">
+    <meta name="keywords" content="Vaccine Maharajganj, Telegram Vaccine Alerts, Vaccine Alerts Maharajganj">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="assets/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="assets/css/color.css" rel="stylesheet" type="text/css" media="all" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Navbar Section -->
+	  
+      <nav class="navbar navbar-light bg-light fixed-top border-bottom">
+        <div class="container">
+          <a class="navbar-brand fs-4" href="/">Maharajganj.</a>
+
+          <button class="navbar-toggler btn-cta fs-6 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            COVID-19
+          </button>
+
+          <div class="collapse navbar-collapse d-none" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto navbar-right">
+              <li class="nav-item fs-5"><a class="nav-link js-scroll-trigger" href="/">Vaccine Finder</a></li>
+              <li class="nav-item fs-5"><a class="nav-link js-scroll-trigger" href="/vaccine-alerts.html">Vaccine Alerts</a></li>
+              <li class="nav-item fs-5"><a class="nav-link js-scroll-trigger" href="/covid19-news.html">Covid-19 News</a></li>
+            </ul>
+          </div>
+         
+        </div>
+      </nav>
+	  
+	  <!-- Navbar End -->
+
+      <div id="main" class="main">
+
+        <div id="vaccineBtn" class="features pb-2">
+          <div class="d-flex justify-content-evenly flex-wrap gap-3 pt-0 pb-3 border-bottom mb-2">
+            <a id="vacfinder-btn" role="button" href="/" class="btn btn-outline-primary">
+              Vaccine Finder
+            </a>
+            <a id="vacalert-btn" role="button" href="/vaccine-alerts.html" class="btn btn-outline-danger">
+              Vaccine Alerts
+            </a>
+            <a id="covidnews-btn" role="button" class="btn btn-outline-success active" aria-current="page">
+              Covid-19 News
+            </a>
+          </div>
+        </div>
+        
+        <div id="vaccineBodyTitle" class="display-5 text-center text-success mt-2 mb-4">Covid-19 News & Updates</div>
+        
+        <div id="vaccineBody" class="vaccines container">
+
+          <div class="nav nav-tabs justify-content-lg-center mb-4" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home-tab-pane" type="button" role="tab" onclick="return covNews('nav-home-tab')">India HI</button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile-tab-pane" type="button" role="tab" onclick="return covNews('nav-profile-tab')">India EN</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact-tab-pane" type="button" role="tab" onclick="return covNews('nav-contact-tab')">International</button>
+          </div>
+          
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active d-flex row justify-content-center" id="nav-home-tab-pane" role="tabpanel"></div>
+            <div class="tab-pane fade d-flex row justify-content-center" id="nav-profile-tab-pane" role="tabpanel"></div>
+            <div class="tab-pane fade d-flex row justify-content-center" id="nav-contact-tab-pane" role="tabpanel"></div>
+          </div>
+
+        </div>
+
+      </div> <!-- Main -->
+    </div><!-- Wrapper -->
+  
+  <!-- Jquery and Js Plugins --> 
+  
+  <script src="assets/js/covNews.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script> 
+  
+  </body>
+</html>

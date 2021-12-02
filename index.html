@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vaccine Booking and Alerts for Maharajganj.</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Covid-19 Vaccine Slot availability tracker and notifier for Maharajganj. Get instant notifications for new vaccine slot openings in Maharajganj and stay ahead at booking your vaccines.">
+    <meta name="keywords" content="Book Vaccine MMaharajganj, Vaccine Alert Maharajganj, Find Vaccine Maharajganj, Track Vaccine Maharajganj, Corona Virus Maharajganj">
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/assets/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="/assets/css/color.css" rel="stylesheet" type="text/css" media="all" />
+
+    <meta name="google-site-verification" content="TytaFh5qUasdhmrTJaaQDQtGAifnL76wv5YdH7ZQADs" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Navbar Section -->
+	  
+      <nav class="navbar navbar-light bg-light fixed-top border-bottom">
+        <div class="container">
+          <a class="navbar-brand fs-4" href="/">Maharajganj.</a>
+
+          <button class="navbar-toggler btn-cta fs-6 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            COVID-19
+          </button>
+
+          <div class="collapse navbar-collapse d-none" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto navbar-right">
+              <li class="nav-item fs-5"><a class="nav-link js-scroll-trigger" href="/">Vaccine Finder</a></li>
+              <li class="nav-item fs-5"><a class="nav-link js-scroll-trigger" href="/vaccine-alerts.html">Vaccine Alerts</a></li>
+              <li class="nav-item fs-5"><a class="nav-link js-scroll-trigger" href="/covid19-news.html">Covid-19 News</a></li>
+            </ul>
+          </div>
+         
+        </div>
+      </nav>
+	  
+	  <!-- Navbar End -->
+
+
+      <div id="main" class="main">
+
+        <div id="vaccineBtn" class="features pb-2">
+          <div class="d-flex justify-content-evenly flex-wrap gap-3 pt-0 pb-3 border-bottom mb-2">
+            <button id="vacfinder-btn" type="button" class="btn btn-outline-primary active" onclick="vacFinder()" aria-current="page">
+              Vaccine Finder
+            </button>
+            <a id="vacalert-btn" role="button" class="btn btn-outline-danger" href="/vaccine-alerts.html">
+              Vaccine Alerts
+            </a>
+            <button id="vactracker-btn" type="button" class="btn btn-outline-danger d-none" onclick="initCheck()">
+              Vaccine Tracker
+            </button>
+            <a id="covidnews-btn" role="button" class="btn btn-outline-success" href="/covid19-news.html">
+              Covid-19 News
+            </a>
+          </div>
+        </div>
+        
+        <div id="vaccineBodyTitle"></div>
+        <div id="vaccineBody" class="vaccines container"></div>
+        
+        <div id="vaccinesNearBy" class="vaccines container mb-5">
+          <div id="vaccinesNearBy-title" class="d-md-flex justify-content-evenly display-4 py-4 mt-2 text-center mx-auto flex-wrap"></div>
+          <div id="vaccinesNearBy-list" class="row justify-content-center"></div>
+        </div>
+         
+
+      </div> <!-- Main -->
+    </div><!-- Wrapper -->
+
+
+  <!-- Jquery and Js Plugins -->
+	
+  <script src="assets/js/vacRefresh.js"></script>
+  <script src="assets/js/vacFinder.js"></script>
+  <script src="assets/js/vacTracker.js"></script>
+  <script src="assets/js/covalert.js"></script>
+  
+  <!--
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
+  -->
+  
+  
+  </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Vaccine Alerts Maharajganj</title>
+    <link rel="icon" href="assets/icons/favicon.png" type="image/png" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Covid-19 Vaccine Slot availability tracker and notifier for Maharajganj.">
+    <meta name="keywords" content="Vaccine Maharajganj, Telegram Vaccine Alerts, Vaccine Alerts Maharajganj">
+  
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="assets/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="assets/css/color.css" rel="stylesheet" type="text/css" media="all" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Navbar Section -->
+	  
+      <nav class="navbar navbar-light bg-light fixed-top border-bottom">
+        <div class="container">
+          <a class="navbar-brand fs-4" href="/">Maharajganj.</a>
+
+          <button class="navbar-toggler btn-cta fs-6 px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            COVID-19
+          </button>
+
+          <div class="collapse navbar-collapse d-none" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto navbar-right">
+              <li class="nav-item fs-5"><a class="nav-link js-scroll-trigger" href="/">Vaccine Finder</a></li>
+              <li class="nav-item fs-5"><a class="nav-link js-scroll-trigger" href="/vaccine-alerts.html">Vaccine Alerts</a></li>
+              <li class="nav-item fs-5"><a class="nav-link js-scroll-trigger" href="/covid19-news.html">Covid-19 News</a></li>
+            </ul>
+          </div>
+         
+        </div>
+      </nav>
+	  
+	  <!-- Navbar End -->
+
+
+      <div id="main" class="main">
+
+        <div id="vaccineBtn" class="features pb-2">
+          <div class="d-flex justify-content-evenly flex-wrap gap-3 pt-0 pb-3 border-bottom mb-2">
+            <a id="vacfinder-btn" role="button" href="/" class="btn btn-outline-primary">
+              Vaccine Finder
+            </a>
+            <a id="vacalert-btn" role="button" class="btn btn-outline-danger active" href="/vaccine-alerts.html" aria-current="page">
+              Vaccine Alerts
+            </a>
+            <a id="covidnews-btn" role="button" class="btn btn-outline-success" href="/covid19-news.html">
+              Covid-19 News
+          </a>
+          </div>
+        </div>
+        
+        <div id="vaccineBodyTitle" class="display-4 text-center text-danger mb-4">Vaccine Alerts</div>
+        <div id="vaccineBody" class="vaccines container">
+            <div class="px-0 pb-5 text-center">
+                <div class="d-flex justify-content-center align-items-center mb-4 flex-wrap gap-3">
+                  <img class="" style="max-width:100px; max-height:100px;" src="/assets/images/vaccine-alerts-maharajganj.jpg" alt="Vaccine Alerts Maharajganj">
+                  <div class="tg-subhead mb-2 text-start">
+                    <h1 class="fs-3 mb-2">Vaccine Alerts Maharajganj</h1>
+                    <a href="https://telegram.me/Vaccine_Alerts_Maharajganj" class="text-decoration-none text-danger" title="Vaccine Alerts Maharajganj">@Vaccine_Alerts_Maharajganj</a>
+                  </div>  
+                </div>
+                <div class="px-2 mx-auto lh-base">
+                  <p class="lead mb-3">Covid-19 Vaccine Slot availability tracker and notifier for Maharajganj.</p>
+                  <p class="lead mb-4">Get instant notifications for new vaccine slot openings in Maharajganj and stay ahead at booking your vaccines. </p>
+                  
+                  <!--<p class="lead mb-4"> Share with people around you to spread awareness and get them vaccinated. </p>-->
+                  
+                  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                    <a href="https://telegram.me/Vaccine_Alerts_Maharajganj" target="_blank" type="button" class="btn btn-primary btn-lg px-4 gap-3 fs-4" title="Join Vaccine Alerts Maharajganj">Join Channel</a>
+                    <!--<a type="button" href="/index.html" class="btn btn-outline-secondary btn-lg px-4">Close</a>-->
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+        <div id="vaccinesNearBy" class="vaccines container mb-5">
+          <div id="vaccinesNearBy-title" class="d-md-flex justify-content-evenly display-4 py-4 mt-2 text-center mx-auto flex-wrap"></div>
+          <div id="vaccinesNearBy-list" class="row justify-content-center"></div>
+        </div>
+         
+
+      </div> <!-- Main -->
+    </div><!-- Wrapper -->
+
+
+    <!-- Jquery and Js Plugins -->
+	
+  
+  <style>
+  @media only screen and (max-width: 396px) {
+    .tg-subhead{
+      text-align: center !important;
+    }
+  }
+  @media only screen and (min-width: 397px) {
+    .tg-subhead h1{
+      max-width: 200px !important;
+      line-height: 1.3;
+    }
+  }
+  @media only screen and (min-width: 450px) {
+    .tg-subhead h1{
+      max-width: 100% !important;
+      margin-bottom: 15px !important;
+      line-height: 1.3;
+    }
+  }
+  div#vaccineBodyTitle {
+    margin-bottom: 30px !important;
+  }
+  </style>
+
+  </body>
+</html>
