@@ -267,7 +267,7 @@ function vacFinderByDate(event, date = vacFinderDate, filterDose = vacfilterDose
 function vacFinder() {
 
     vacfinderBtn.classList.add("active");
-    vacalertBtn.classList.remove("active");
+    //vacalertBtn.classList.remove("active");
     vactrackerBtn.classList.remove("active");
   
     vaccineBody.innerHTML = '<div class="display-4 text-primary text-center mb-3">Vaccine Finder</div>';
