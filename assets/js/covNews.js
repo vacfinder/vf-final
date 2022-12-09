@@ -21,18 +21,18 @@ function covNews(tabId) {
     let tabPane = document.getElementById(tabId+'-pane');
 
     switch(tabId) {
-      case "nav-home-tab": url = 'https://pipra.today/news_covid_json.php?news_type=inhi';
+      case "nav-home-tab": url = 'https://ancestry.gq/covid19/news_covid_json.php?news_type=inhi';
       //case "nav-home-tab": url = 'https://gnews.io/api/v4/search?token=40e97e6d8bd8dc8d6036068635719942&q=covid&country=in';
         navHome.classList.remove('d-none');
         navProfile.classList.add('d-none');
         navContact.classList.add('d-none');
         break;
-      case "nav-profile-tab": url = 'https://pipra.today/news_covid_json.php?news_type=inen';
+      case "nav-profile-tab": url = 'https://ancestry.gq/covid19/news_covid_json.php?news_type=inen';
         navProfile.classList.remove('d-none');
         navHome.classList.add('d-none');
         navContact.classList.add('d-none');
         break;
-      default: url = 'https://pipra.today/news_covid_json.php?news_type=int';
+      default: url = 'https://ancestry.gq/covid19/news_covid_json.php?news_type=int';
         navContact.classList.remove('d-none');
         navHome.classList.add('d-none');
         navProfile.classList.add('d-none');
